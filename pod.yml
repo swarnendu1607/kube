@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: Pod1
+  name: pod1
   labels:
     app: helloworld
-specs:
+spec:
   containers:
   - name: k8s-demo
     image: arjunachari12/k8s-demo
     ports:
     - name: nodejs-port
-    containerPort: 3000
+      containerPort: 3000
